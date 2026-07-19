@@ -50,9 +50,9 @@ Este ciclo de simulación se repite iterativamente de manera dinámica, acumulan
 
 A continuación se muestra la matriz infintesimal y los resulados obtenidos:
 
-![Matriz infinitesimal](..\images\matrix_p1_item2.png)
+![Matriz infinitesimal](/images/matrix_p1_item2.png)
 
-![Resultados punto 1](..\images\results_p1_item2.png)
+![Resultados punto 1](/images/results_p1_item2.png)
 
 ## Punto 2:
 
@@ -133,9 +133,9 @@ Posteriormente, el algoritmo evalúa de manera matricial la condición lógica d
 
 A continuación se muestran la gráfica de la serie obtenida, la volatilidad y los resultados obtenidos:
 
-![Serie](..\images\serie_p2_item2.png)
+![Serie](/images/serie_p2_item2.png)
 
-![Volatilidad](..\images\voltatilidad_p2_item2.png)
+![Volatilidad](/images/voltatilidad_p2_item2.png)
 
 ## Punto 3:
 
@@ -176,25 +176,25 @@ A partir de un conjunto de observaciones bidimensionales conteniendo una variabl
 
   Dado un conjunto de datos de entrenamiento $D = \{(x_i, y\_i)\}\_{i=1}^n$ y un nuevo conjunto de puntos de prueba $X_* $, la distribución conjunta entre las observaciones y las predicciones latentes $f_* = f(X_*)$ es una distribución normal multivariada:
   
-  ![eq1](..\images\eq1.svg)
+  ![eq1](/images/eq1.svg)
   
   Aplicando las reglas de condicionamiento gaussianas, se deduce que la distribución posterior predictiva de las variables latentes en los nuevos puntos también es una gaussiana, $f_* \mid X, \mathbf{y}, X_* \sim \mathcal{N}(\mu_*, \Sigma)$, donde los momentos estadísticos óptimos se calculan mediante las ecuaciones de proyección matricial:
   
-  ![eq2](..\images\eq2.svg)
+  ![eq2](/images/eq2.svg)
   
-  ![eq3](..\images\eq3.svg)
+  ![eq3](/images/eq3.svg)
 
 - Estimación del Máximo a Posteriori (MAP) mediante L-BFGS-B:
 
   En lugar de simular la distribución posterior completa de los hiperparámetros $\boldsymbol{\theta} = \{\ell, \eta, \sigma\}$ usando algoritmos de muestreo basados en gradientes (como NUTS), el método MAP calcula el estimador puntual que maximiza la densidad de la probabilidad posterior. Por el Teorema de Bayes, esto equivale a maximizar la suma del logaritmo de la verosimilitud marginal y el logaritmo de las distribuciones a priori:
 
-  ![eq4](..\images\eq4.svg)
+  ![eq4](/images/eq4.svg)
 
   El algoritmo L-BFGS-B (Limited-memory Broyden–Fletcher–Goldfarb–Shanno con restricciones de caja) resuelve este problema de optimización numérica no lineal de gran escala. Utiliza aproximaciones compactas de la matriz inversa de Hessian para guiar la dirección del gradiente, asegurando que los hiperparámetros se mantengan estrictamente dentro de sus límites físicos (por ejemplo, restricciones de positividad $\ell, \eta, \sigma > 0$)
 
 Finalmente se muestran las gráficas de algunas de las posibles trayectorias del proceso Gaussino junto con una banda de confianza del 95% para el proceso:
 
-  ![Posibles curvas](..\images\posibles_curvas_gp.png)
+  ![Posibles curvas](/images/posibles_curvas_gp.png)
 
-  ![Bandas de confianza](..\images\bandas_de_confianza.png)
+  ![Bandas de confianza](/images/bandas_de_confianza.png)
    
