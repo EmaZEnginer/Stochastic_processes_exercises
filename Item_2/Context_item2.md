@@ -194,7 +194,7 @@ A partir de un conjunto de observaciones bidimensionales conteniendo una variabl
 
 Finalmente se muestran las gráficas de algunas de las posibles trayectorias del proceso Gaussino junto con una banda de confianza del 95% para el proceso:
 
-  ![eq4](..\images\posibles_curvas_gp.png)
+  ![Posibles curvas](..\images\posibles_curvas_gp.png)
 
-  ![eq4](..\images\bandas_de_confianza.png)
+  ![Bandas de confianza](..\images\bandas_de_confianza.png)
    
