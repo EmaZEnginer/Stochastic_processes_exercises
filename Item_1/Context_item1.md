@@ -48,7 +48,7 @@ $$\mu_2 = \frac{1}{M} \sum_{i=1}^{M} x_i^2 \implies \text{Var}(X) \approx \mu_2 
 
 A continuación se muestan las imágenes de resultados obtenidos:
 
-![Histrograma de muestras metropoli-hastings y datos obtenidos](..\images\histograma_y_datos_obtenidos.png)
+![Histrograma de muestras metropoli-hastings y datos obtenidos](/images/histograma_y_datos_obtenidos.png)
 
 ## Problema:
 ### Punto 2: Simulación de Distribuciones Condicionadas mediante Muestreo de Gibbs
@@ -119,4 +119,4 @@ $$\mathbb{E}[XN] \approx \frac{1}{M} \sum_{i=1}^{M} x_i n_i$$
 
 A continuación se muestra el diagrama de dispersión obtenido:
 
-![Diagrama de dispersión](..\images\diagrama_de_dispersion.png)
+![Diagrama de dispersión](/images/diagrama_de_dispersion.png)
