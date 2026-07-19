@@ -56,7 +56,7 @@ A continuación se muestra la matriz infintesimal y los resulados obtenidos:
 
 ## Punto 2:
 
-#### Enunciado: Modelado del Tiempo de Primera Travesía en Activos Financieros mediante el Movimiento Browniano Geométrico
+#### Enunciado: Modelado en Activos Financieros mediante el Movimiento Browniano Geométrico
 
 Utilizando series temporales históricas de precios de cierre diarios obtenidas de Yahoo Finance para el activo First Solar, Inc. (FSLR), desarrolle e implemente el marco metodológico del Movimiento Browniano Geométrico (GBM) bajo las siguientes especificaciones:
 
